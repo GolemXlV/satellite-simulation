@@ -16,7 +16,7 @@ else:
 df = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/2011_us_ag_exports.csv")
 
 layout = html.Div([
-    html.Div([html.H1("United States Exports")],
+    html.Div([html.H1("Satellite position")],
              style={'textAlign': "center", "padding-bottom": "10", "padding-top": "10"}),
     html.Div(
         [html.Div(dcc.Dropdown(id="select-xaxis", options=[{'label': i.title(), 'value': i} for i in df.columns[3:]],
